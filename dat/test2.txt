@@ -1,0 +1,3 @@
+R1 Vdd GND 1
+R2 Vdd GND 1
+R1 R2

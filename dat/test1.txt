@@ -1,0 +1,5 @@
+R1 Vdd a 1
+R2 a b 1
+R3 b GND 1
+R4 a GND 1
+R1 R3
