@@ -189,7 +189,7 @@ vResistorPair_t markSeries(cMultiGraph &g)
                 continue;
 
             // check no other resitor connected to shred node
-            if (g.vertexDegree(sharedVertex) == 2)
+            if (g.vertexDegree(sharedVertex) != 2)
                 continue;
 
             // store pair in alphabetical order
@@ -223,7 +223,7 @@ main(int argc, char *argv[])
 
     cMultiGraph g;          // the circuit graph
     vResistorPair_t q;      // the queries
-    
+
     read(g, q, argv[1]);    // read the input file
     g.displayEdges();       // display input
 
